@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className="fixed w-full h-20 shadow-xl z-[100]">
       <div className="flex items-center justify-between w-full h-full px-2 2xl:px-16">
         {/* Logo */}
-        <Image src="/assets/navLogo.png" alt="/" width={85} height={45} />
+        <Image src="/assets/navLogo.png" alt="/" width={160} height={45} />
 
         {/* Main Navbar */}
         <div>
@@ -59,14 +59,19 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
           <div className="">
             <div className="flex items-center justify-between w-full">
               {/* Logo */}
-              <Image src="/assets/navLogo.png" alt="/" width={85} height={45} />
+              <Image
+                src="/assets/navLogo.png"
+                alt="/"
+                width={160}
+                height={45}
+              />
               <div
                 onClick={handleNav}
                 className="p-3 rounded-full shadow-lg cursor-pointer shadow-gray-400"
@@ -103,11 +108,7 @@ const Navbar = () => {
 
             {/* Social presence  */}
             <div className="pt-40">
-              <p className="tracking-widest uppercase text-[#5651e5]">
-                Let{"'"}s connect
-              </p>
               {/* icons */}
-
               <div className="pt-40">
                 <p className="uppercase tracking-widest text-[#5651e5]">
                   Let{"'"}s Connect
