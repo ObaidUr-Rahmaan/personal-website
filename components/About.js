@@ -12,7 +12,7 @@ const About = () => {
           <p className="py-2 text-gray-600">
             I graduated with a Computer Science Degree in August 2020 and have
             spent the last 2 years in Back-End development with a heavy focus on
-            DevOps and Infrastructure. I decided to built this site to showcase
+            DevOps and Infrastructure. I decided to build this site to showcase
             some of my hobby work learning Full-Stack development on the side. I
             {"'"}ve worked with a wide variety of technologies and am excited to
             keep learning and growing in this space.

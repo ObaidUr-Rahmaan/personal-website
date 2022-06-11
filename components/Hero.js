@@ -40,12 +40,12 @@ const Hero = () => {
                 <FaGithub />
               </div>
             </a>
-            <Link href="/#contact">
+            <Link href="/">
               <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
                 <AiOutlineMail />
               </div>
             </Link>
-            <Link href="/resume">
+            <Link href="/">
               <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
                 <BsFillPersonLinesFill />
               </div>
