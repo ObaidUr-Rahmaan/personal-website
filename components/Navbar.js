@@ -14,10 +14,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div className="fixed w-full h-20 shadow-xl z-[100] bg-white">
       <div className="flex items-center justify-between w-full h-full px-2 2xl:px-16">
         {/* Logo */}
-        <Image src="/assets/navLogo.png" alt="/" width={160} height={45} />
+        <Image
+          src="/assets/navLogo-white.png"
+          alt="/"
+          width={160}
+          height={45}
+        />
 
         {/* Main Navbar */}
         <div>
@@ -44,7 +49,7 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
-          <div onClick={handleNav} className="md:hidden">
+          <div onClick={handleNav} className="cursor-pointer md:hidden">
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -67,7 +72,7 @@ const Navbar = () => {
             <div className="flex items-center justify-between w-full">
               {/* Logo */}
               <Image
-                src="/assets/navLogo.png"
+                src="/assets/navLogo-white.png"
                 alt="/"
                 width={160}
                 height={45}
@@ -110,7 +115,7 @@ const Navbar = () => {
             <div className="pt-40">
               {/* icons */}
               <div className="pt-40">
-                <p className="uppercase tracking-widest text-[#5651e5]">
+                <p className="uppercase tracking-widest text-[#dd9066]">
                   Let{"'"}s Connect
                 </p>
                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">

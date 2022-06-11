@@ -12,13 +12,13 @@ const Hero = () => {
             Let{"'"}s build something together
           </p>
           <h1 className="py-4 text-gray-700">
-            Hi, I{"'"}m <span className="text-[#5651e5]"> Obaid</span>
+            Hi, I{"'"}m <span className="text-[#dd9066]"> Obaid</span>
           </h1>
           <h1 className="py-2 text-gray-700">A Full-Stack Software Engineer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             I specialize in building (and occasionally designing) exceptional
             digital experiences. Currently, I{"'"}m working full-time as a
-            Back-end Engineer at Vonage - but that doesn{"'"}t stop me from
+            Back-End Engineer at Vonage - but that doesn{"'"}t stop me from
             learning new technologies and building cool stuff!
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
