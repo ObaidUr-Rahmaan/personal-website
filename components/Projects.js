@@ -19,7 +19,7 @@ const Projects = () => {
             title="Integratize"
             backgroundImg={integratizeImg}
             projectUrl="/integratize"
-            techStack={["NextJS", "TailwindCSS", "MySQL"]}
+            techStack={["NextJS", "TailwindCSS", "Firebase"]}
           />
         </div>
       </div>
