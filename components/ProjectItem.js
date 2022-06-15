@@ -3,7 +3,13 @@ import Link from "next/link";
 import React from "react";
 import ProgressBar from "./ProgressBar";
 
-const ProjectItem = ({ title, backgroundImg, projectUrl, techStack }) => {
+const ProjectItem = ({
+  title,
+  backgroundImg,
+  projectUrl,
+  techStack,
+  progressPercentage,
+}) => {
   return (
     <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#dd9066] to-[#e1a280]">
       <Image
@@ -27,7 +33,7 @@ const ProjectItem = ({ title, backgroundImg, projectUrl, techStack }) => {
         </Link>
         <div className="flex items-center justify-between gap-4 mt-10">
           <p>Progress</p>
-          <ProgressBar progressPercentage={65} />
+          <ProgressBar progressPercentage={progressPercentage} />
         </div>
       </div>
     </div>

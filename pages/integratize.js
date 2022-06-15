@@ -4,7 +4,7 @@ import integratizeImg from "../public/assets/projects/integratize.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-import { FaLinkedinIn, FaTwitter } from "react-icons/all";
+import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Integratize = () => {
   return (
