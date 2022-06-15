@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 
 const About = () => {
   return (
@@ -21,9 +23,19 @@ const About = () => {
             growing in this space :)
           </p>
           {/* TODO - Make this a button maybe? */}
-          <p className="py-2 text-gray-600 underline cursor-pointer">
-            Check out some of my latest projects.
+          <p className="py-2 text-gray-600">
+            Check out some of my latest projects below.
           </p>
+          <div className="flex justify-center py-12">
+            <Link href="/#projects">
+              <div className="p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
+                <HiOutlineChevronDoubleDown
+                  className="text-[#dd9066]"
+                  size={30}
+                />
+              </div>
+            </Link>
+          </div>
         </div>
         <div className="flex items-center justify-center w-full h-auto p-4 m-auto duration-300 ease-in shadow-xl shadow-gray-400 rounded-xl hover:scale-105">
           <Image
