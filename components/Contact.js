@@ -52,7 +52,7 @@ const Contact = () => {
                 <p className="pt-8 uppercase">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
                   <a
-                    href="https://www.linkedin.com/in/clint-briley-50056920a/"
+                    href="https://www.linkedin.com/in/obaid-ur-rahmaan-5bb29814b/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -61,7 +61,7 @@ const Contact = () => {
                     </div>
                   </a>
                   <a
-                    href="https://github.com/fireclint"
+                    href="https://github.com/ObaidUr-Rahmaan/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -88,7 +88,7 @@ const Contact = () => {
             <div className="p-4">
               <form
                 onSubmit={handleSubmit}
-                action="https://getform.io/f/08ebcd37-f5b5-45be-8c13-714f011ce060"
+                action="https://getform.io/f/9b8e38aa-49e2-45eb-824c-0fbccf4e8d23"
                 method="POST"
               >
                 <div className="grid w-full gap-4 py-2 md:grid-cols-2">
@@ -125,6 +125,7 @@ const Contact = () => {
                     name="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    placeholder="jake.williams@gmail.com"
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -135,6 +136,7 @@ const Contact = () => {
                     name="subject"
                     value={subject}
                     onChange={(e) => setSubject(e.target.value)}
+                    placeholder="Startup Idea - ..."
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -145,6 +147,7 @@ const Contact = () => {
                     name="message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
+                    placeholder="I wanted to reach out to ask..."
                   ></textarea>
                 </div>
                 <button className="w-full p-4 mt-4 text-gray-100">

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import ProgressBar from "./ProgressBar";
 
 const ProjectItem = ({ title, backgroundImg, projectUrl, techStack }) => {
   return (
@@ -24,6 +25,10 @@ const ProjectItem = ({ title, backgroundImg, projectUrl, techStack }) => {
             More Info
           </p>
         </Link>
+        <div className="flex items-center justify-between gap-4 mt-10">
+          <p>Progress</p>
+          <ProgressBar progressPercentage={65} />
+        </div>
       </div>
     </div>
   );
