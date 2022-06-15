@@ -16,7 +16,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 90) {
+      if (window.scrollY >= 25) {
         setShadow(true);
       } else {
         setShadow(false);
@@ -35,12 +35,14 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between w-full h-full px-2 2xl:px-16">
         {/* Logo */}
-        <Image
-          src="/assets/navLogo-white.png"
-          alt="/"
-          width={160}
-          height={45}
-        />
+        <Link href="/">
+          <Image
+            src="/assets/navLogo-white.png"
+            alt="Logo"
+            width={160}
+            height={45}
+          />
+        </Link>
 
         {/* Main Navbar */}
         <div>
@@ -48,20 +50,20 @@ const Navbar = () => {
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:font-bold">Home</li>
             </Link>
-            <Link href="/">
+            <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:font-bold">About</li>
             </Link>
-            <Link href="/">
+            <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:font-bold">
                 Skills
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:font-bold">
                 Projects
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:font-bold">
                 Contact
               </li>
@@ -115,16 +117,16 @@ const Navbar = () => {
               <Link href="/">
                 <li className="py-4 text-sm">Home</li>
               </Link>
-              <Link href="/">
+              <Link href="/#about">
                 <li className="py-4 text-sm">About</li>
               </Link>
-              <Link href="/">
+              <Link href="/#skills">
                 <li className="py-4 text-sm">Skills</li>
               </Link>
-              <Link href="/">
+              <Link href="/#projects">
                 <li className="py-4 text-sm">Projects</li>
               </Link>
-              <Link href="/">
+              <Link href="/#contact">
                 <li className="py-4 text-sm">Contact</li>
               </Link>
             </ul>

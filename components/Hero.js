@@ -5,11 +5,11 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen text-center">
+    <div id="hero" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div className="">
           <p className="text-sm tracking-widest text-gray-600 uppercase">
-            Let{"'"}s build something together
+            Let{"'"}s build something together 🤗
           </p>
           <h1 className="py-4 text-gray-700">
             Hi, I{"'"}m <span className="text-[#dd9066]"> Obaid</span>
@@ -17,7 +17,7 @@ const Hero = () => {
           <h1 className="py-2 text-gray-700">A Full-Stack Software Engineer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             I specialize in building (and occasionally designing) exceptional
-            digital experiences. Currently, I{"'"}m working full-time as a
+            digital experiences. At present, I{"'"}m working full-time as a
             Back-End Engineer at Vonage - but that doesn{"'"}t stop me from
             learning new technologies and building cool stuff!
           </p>

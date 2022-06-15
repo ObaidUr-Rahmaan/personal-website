@@ -3,7 +3,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-full p-2 lg:h-screen">
+    <div id="skills" className="w-full p-2 mb-40 lg:h-screen">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-[#dd9066]">
           Skills
