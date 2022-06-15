@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -11,6 +13,18 @@ const Hero = () => {
           <p className="text-sm tracking-widest text-gray-600 uppercase">
             Let{"'"}s build something together
           </p>
+
+          {/* My Avatar profile picture */}
+          <div className="flex items-center justify-center py-4 m-auto">
+            <img
+              src="/assets/profile-picture.jpeg"
+              className="rounded-full"
+              alt="Profile picture"
+              width="200"
+              height="200"
+            />
+          </div>
+
           <h1 className="py-4 text-gray-700">
             Hi, I{"'"}m <span className="text-[#3a44a0]"> Obaid</span>
           </h1>
