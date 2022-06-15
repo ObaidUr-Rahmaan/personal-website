@@ -11,7 +11,6 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
-  const [linkColor, setLinkColor] = useState("#00BFFF");
   const [logo, setLogo] = useState("/assets/navLogo-white.png");
   const router = useRouter();
 
@@ -27,10 +26,8 @@ const Navbar = () => {
   useEffect(() => {
     if (router.asPath === "/integratize" || router.asPath === "/lordsofchaos") {
       setNavBg("transparent");
-      setLinkColor("#ecf0f3");
     } else {
       setNavBg("#ecf0f3");
-      setLinkColor("#1f2937");
     }
   }, [router]);
 
