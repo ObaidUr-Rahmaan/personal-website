@@ -7,7 +7,7 @@ const About = () => {
     <div id="about" className="flex items-center w-full p-2 py-16 md:h-screen">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#dd9066]">
+          <p className="uppercase text-xl tracking-widest text-[#3a44a0]">
             About Me
           </p>
           <h2 className="py-4">Who I Am</h2>
@@ -30,7 +30,7 @@ const About = () => {
             <Link href="/#projects">
               <div className="p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
                 <HiOutlineChevronDoubleDown
-                  className="text-[#dd9066]"
+                  className="text-[#3a44a0]"
                   size={30}
                 />
               </div>

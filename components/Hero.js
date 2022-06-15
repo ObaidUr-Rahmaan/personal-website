@@ -12,7 +12,7 @@ const Hero = () => {
             Let{"'"}s build something together 🤗
           </p>
           <h1 className="py-4 text-gray-700">
-            Hi, I{"'"}m <span className="text-[#dd9066]"> Obaid</span>
+            Hi, I{"'"}m <span className="text-[#3a44a0]"> Obaid</span>
           </h1>
           <h1 className="py-2 text-gray-700">A Full-Stack Software Engineer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
@@ -40,7 +40,7 @@ const Hero = () => {
                 <FaGithub />
               </div>
             </a>
-            <Link href="/">
+            <Link href="/#contact">
               <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
                 <AiOutlineMail />
               </div>

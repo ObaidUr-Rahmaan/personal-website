@@ -11,7 +11,7 @@ const ProjectItem = ({
   progressPercentage,
 }) => {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#dd9066] to-[#e1a280]">
+    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#3a44a0] to-[#e1a280]">
       <Image
         className="rounded-xl group-hover:opacity-10"
         src={backgroundImg}

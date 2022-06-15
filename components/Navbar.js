@@ -5,14 +5,30 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#00BFFF");
+  const [logo, setLogo] = useState("/assets/navLogo-white.png");
+  const router = useRouter();
 
   const handleNav = () => {
     setNav(!nav);
   };
+
+  useEffect(() => {
+    if (router.asPath === "/integratize") {
+      setLogo("/assets/navLogo-black.png");
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+    }
+  }, [router]);
 
   useEffect(() => {
     const handleShadow = () => {
@@ -27,28 +43,24 @@ const Navbar = () => {
 
   return (
     <div
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
-          : "fixed w-full h-20 z-[100]"
+          ? "fixed w-full h-18 shadow-xl z-[100] ease-in-out duration-300"
+          : "fixed w-full h-18 z-[100]"
       }
     >
       <div className="flex items-center justify-between w-full h-full px-2 2xl:px-16">
         {/* Logo */}
         <div className="cursor-pointer">
           <Link href="/">
-            <Image
-              src="/assets/navLogo-white.png"
-              alt="Logo"
-              width={160}
-              height={45}
-            />
+            <Image src={logo} alt="Logo" width={160} height={45} />
           </Link>
         </div>
 
         {/* Main Navbar */}
         <div>
-          <ul className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:font-bold">Home</li>
             </Link>
@@ -95,12 +107,7 @@ const Navbar = () => {
               {/* Logo */}
               <div className="cursor-pointer">
                 <Link href="/">
-                  <Image
-                    src="/assets/navLogo-white.png"
-                    alt="/"
-                    width={160}
-                    height={45}
-                  />
+                  <Image src={logo} alt="/" width={160} height={45} />
                 </Link>
               </div>
               <div
@@ -151,7 +158,7 @@ const Navbar = () => {
             <div className="pt-40">
               {/* icons */}
               <div className="pt-40">
-                <p className="uppercase tracking-widest text-[#dd9066]">
+                <p className="uppercase tracking-widest text-[#3a44a0]">
                   Let{"'"}s Connect
                 </p>
                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
