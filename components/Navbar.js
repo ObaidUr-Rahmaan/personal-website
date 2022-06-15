@@ -35,14 +35,16 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between w-full h-full px-2 2xl:px-16">
         {/* Logo */}
-        <Link href="/">
-          <Image
-            src="/assets/navLogo-white.png"
-            alt="Logo"
-            width={160}
-            height={45}
-          />
-        </Link>
+        <div className="cursor-pointer">
+          <Link href="/">
+            <Image
+              src="/assets/navLogo-white.png"
+              alt="Logo"
+              width={160}
+              height={45}
+            />
+          </Link>
+        </div>
 
         {/* Main Navbar */}
         <div>
@@ -91,12 +93,16 @@ const Navbar = () => {
           <div className="">
             <div className="flex items-center justify-between w-full">
               {/* Logo */}
-              <Image
-                src="/assets/navLogo-white.png"
-                alt="/"
-                width={160}
-                height={45}
-              />
+              <div className="cursor-pointer">
+                <Link href="/">
+                  <Image
+                    src="/assets/navLogo-white.png"
+                    alt="/"
+                    width={160}
+                    height={45}
+                  />
+                </Link>
+              </div>
               <div
                 onClick={handleNav}
                 className="p-3 rounded-full shadow-lg cursor-pointer shadow-gray-400"
