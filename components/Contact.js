@@ -12,13 +12,6 @@ const Contact = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = () => {
-    setName("");
-    setEmail("");
-    setSubject("");
-    setMessage("");
-  };
-
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
@@ -47,7 +40,7 @@ const Contact = () => {
                 </p>
               </div>
               <div>
-                <p className="pt-8 uppercase">Connect With Me</p>
+                <p className="pt-8 text-blue-800 uppercase">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
                   <a
                     href="https://www.linkedin.com/in/obaid-ur-rahmaan-5bb29814b/"
@@ -85,9 +78,9 @@ const Contact = () => {
           <div className="w-full h-auto col-span-3 shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
               <form
-                onSubmit={handleSubmit}
                 action="https://getform.io/f/9b8e38aa-49e2-45eb-824c-0fbccf4e8d23"
                 method="POST"
+                encType="multipart/form-data"
               >
                 <div className="grid w-full gap-4 py-2 md:grid-cols-2">
                   <div className="flex flex-col">
@@ -101,19 +94,6 @@ const Contact = () => {
                       placeholder="Jake Williams"
                     />
                   </div>
-                  {/* <div className="flex flex-col">
-                    <label className="py-2 text-sm uppercase">
-                      Phone Number
-                    </label>
-                    <input
-                      className="flex p-3 border-2 border-gray-300 rounded-lg"
-                      type="text"
-                      name="phone"
-                      value={phone}
-                      onChange={(e) => setPhone(e.target.value)}
-                      placeholder="(123) 456-7890"
-                    />
-                  </div> */}
                 </div>
                 <div className="flex flex-col py-2">
                   <label className="py-2 text-sm uppercase">Email</label>
