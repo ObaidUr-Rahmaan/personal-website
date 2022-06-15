@@ -9,7 +9,7 @@ import ProjectItem from "./ProjectItem";
 const Projects = () => {
   return (
     <div id="projects" className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
+      <div className="max-w-[1240px] mx-auto mt-32 px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-[#3a44a0]">
           Projects
         </p>
@@ -23,7 +23,21 @@ const Projects = () => {
             progressPercentage={65}
           />
         </div>
+
+        {/* Built */}
+        <h2 className="py-4">What I{"'"}ve Built</h2>
+        <div className="grid gap-8 md:grid-cols-2">
+          <ProjectItem
+            title="Lord of Chaos"
+            backgroundImg={lordsofchaosImg}
+            projectUrl="/lordsofchaos"
+            techStack={["Java", "Gradle", "DigitalOcean"]}
+            progressPercentage={100}
+          />
+        </div>
       </div>
+
+      {/* Built */}
     </div>
   );
 };

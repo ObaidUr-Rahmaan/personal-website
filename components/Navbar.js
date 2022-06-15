@@ -17,11 +17,15 @@ const Navbar = () => {
 
   const handleNav = () => {
     setNav(!nav);
+    if (nav) {
+      setLogo("/assets/navLogo-black.png");
+    } else {
+      setLogo("/assets/navLogo-white.png");
+    }
   };
 
   useEffect(() => {
-    if (router.asPath === "/integratize") {
-      setLogo("/assets/navLogo-black.png");
+    if (router.asPath === "/integratize" || router.asPath === "/lordsofchaos") {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
     } else {
