@@ -11,6 +11,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#FFFFFF");
   const [logo, setLogo] = useState("/assets/navLogo-white.png");
   const router = useRouter();
 
@@ -25,9 +26,12 @@ const Navbar = () => {
 
   useEffect(() => {
     if (router.asPath === "/integratize" || router.asPath === "/lordsofchaos") {
+      setLogo("/assets/navLogo-black.png");
       setNavBg("transparent");
+      setLinkColor("#ecf0f3");
     } else {
       setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
     }
   }, [router]);
 
@@ -61,7 +65,7 @@ const Navbar = () => {
 
         {/* Main Navbar */}
         <div>
-          <ul className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:font-bold">Home</li>
             </Link>
@@ -84,6 +88,7 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
+          {/* TODO: Make this a white hamburger on mobile */}
           <div onClick={handleNav} className="cursor-pointer md:hidden">
             <AiOutlineMenu size={25} />
           </div>
