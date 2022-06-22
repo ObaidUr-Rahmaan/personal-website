@@ -30,9 +30,9 @@ const Projects = () => {
         <div className="grid gap-8 md:grid-cols-2">
           {/* Kin-io  */}
           <ProjectItem
-            title="Kin-io"
+            title="Kin"
             backgroundImg={kinioImg}
-            projectUrl="/kinio"
+            projectUrl="/kin"
             techStack={["ReactJS", "Redux", "Firebase", "NodeJS", "ExpressJS"]}
             progressPercentage={100}
           />
