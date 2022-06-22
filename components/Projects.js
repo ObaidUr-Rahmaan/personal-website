@@ -20,13 +20,22 @@ const Projects = () => {
             backgroundImg={integratizeImg}
             projectUrl="/integratize"
             techStack={["NextJS", "TailwindCSS", "Firebase"]}
-            progressPercentage={65}
+            progressPercentage={45}
           />
         </div>
 
         {/* Built */}
         <h2 className="py-4">What I{"'"}ve Built</h2>
+        {/* Lords Of Choas */}
         <div className="grid gap-8 md:grid-cols-2">
+          {/* Kin-io  */}
+          <ProjectItem
+            title="Kin-io"
+            backgroundImg={kinioImg}
+            projectUrl="/kinio"
+            techStack={["ReactJS", "Redux", "Firebase", "NodeJS", "ExpressJS"]}
+            progressPercentage={100}
+          />
           <ProjectItem
             title="Lord of Chaos"
             backgroundImg={lordsofchaosImg}

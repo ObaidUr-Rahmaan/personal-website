@@ -17,7 +17,7 @@ const ProjectItem = ({
         src={backgroundImg}
         alt="/"
       />
-      <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+      <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-40">
         <h3 className="text-2xl tracking-wider text-center text-white">
           {title}
         </h3>
