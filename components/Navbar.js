@@ -18,7 +18,7 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
     if (nav) {
-      setLogo("/assets/navLogo-black.png");
+      setLogo("/assets/navLogo-white.png");
     } else {
       setLogo("/assets/navLogo-white.png");
     }
