@@ -77,7 +77,7 @@ const Integratize = () => {
               </div>
             </a>
             <a
-              href="https://github.com/ObaidUr-Rahmaan"
+              href="https://twitter.com/integratizeio"
               target="_blank"
               rel="noreferrer"
             >
